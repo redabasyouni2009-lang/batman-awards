@@ -3,62 +3,172 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Batman Awards</title>
+    <title>Batman - Le Chevalier Noir</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1 class="title">🦇 Batman Awards 🦇</h1>
-        <p class="subtitle">Les meilleurs prix pour les héros de Gotham</p>
-        
-        <div class="awards-grid">
-            <div class="award-card">
-                <div class="award-icon">🏆</div>
-                <h2>Meilleur Héros</h2>
-                <p>Batman - Le Chevalier Noir</p>
-                <button class="award-btn" onclick="celebrateAward('Batman')">Voter</button>
-            </div>
-            
-            <div class="award-card">
-                <div class="award-icon">🎯</div>
-                <h2>Meilleur Allié</h2>
-                <p>Robin - Le Jeune Prodige</p>
-                <button class="award-btn" onclick="celebrateAward('Robin')">Voter</button>
-            </div>
-            
-            <div class="award-card">
-                <div class="award-icon">🔨</div>
-                <h2>Meilleur Gadget</h2>
-                <p>Le Batarang - L'Arme Parfaite</p>
-                <button class="award-btn" onclick="celebrateAward('Batarang')">Voter</button>
-            </div>
-            
-            <div class="award-card">
-                <div class="award-icon">🚗</div>
-                <h2>Meilleur Véhicule</h2>
-                <p>La Batmobile - Rapide et Puissante</p>
-                <button class="award-btn" onclick="celebrateAward('Batmobile')">Voter</button>
-            </div>
-            
-            <div class="award-card">
-                <div class="award-icon">🏢</div>
-                <h2>Meilleur Repaire</h2>
-                <p>La Batcave - Le Quartier Général</p>
-                <button class="award-btn" onclick="celebrateAward('Batcave')">Voter</button>
-            </div>
-            
-            <div class="award-card">
-                <div class="award-icon">😈</div>
-                <h2>Meilleur Ennemi</h2>
-                <p>Le Joker - L'Adversaire Éternel</p>
-                <button class="award-btn" onclick="celebrateAward('Joker')">Voter</button>
-            </div>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">🦇 BATMAN 🦇</h1>
+            <ul class="nav-links">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#biographie">Biographie</a></li>
+                <li><a href="#accomplissements">Accomplissements</a></li>
+                <li><a href="#films">Films</a></li>
+                <li><a href="#galerie">Galerie</a></li>
+            </ul>
         </div>
+    </nav>
 
-        <div class="vote-counter">
-            <p>Total des votes : <span id="totalVotes">0</span></p>
+    <!-- Hero Section -->
+    <section id="accueil" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">🦇 BATMAN 🦇</h1>
+            <p class="hero-subtitle">Le Chevalier Noir de Gotham</p>
+            <p class="hero-description">« Je suis vengeance, je suis la nuit, JE SUIS BATMAN »</p>
         </div>
-    </div>
+    </section>
+
+    <!-- Biographie -->
+    <section id="biographie" class="biographie">
+        <div class="container">
+            <h2 class="section-title">📖 Biographie</h2>
+            <div class="bio-content">
+                <img src="https://images.unsplash.com/photo-1594909122845-11bda37a4e05?w=400&h=400&fit=crop" alt="Batman" class="bio-image">
+                <div class="bio-text">
+                    <h3>Bruce Wayne - Le Chevalier Noir</h3>
+                    <p>
+                        <strong>Bruce Wayne</strong> est un milliardaire philanthrope de Gotham City, mieux connu sous le nom de <strong>Batman</strong>, le super-héros le plus redouté du monde des criminels.
+                    </p>
+                    <p>
+                        Après avoir été témoin du meurtre de ses parents Thomas et Martha Wayne lors d'un vol à main armée dans une ruelle sombre de Gotham, le jeune Bruce a juré de consacrer sa vie à combattre le crime et l'injustice.
+                    </p>
+                    <p>
+                        Sans pouvoirs surhumains, Batman utilise son intelligence exceptionnelle, sa richesse, sa formation martiale et sa technologie de pointe pour devenir le protecteur de Gotham City. Sous son identité civile, Bruce Wayne gère Wayne Enterprises, une des plus grandes corporations du monde.
+                    </p>
+                    <p>
+                        Batman opère dans l'ombre, terrifiant les criminels et protégeant les innocents. Son symbole, une chauve-souris, est devenu un emblème de peur pour les malfaiteurs et d'espoir pour les citoyens de Gotham.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accomplissements -->
+    <section id="accomplissements" class="accomplissements">
+        <div class="container">
+            <h2 class="section-title">🏆 Grands Accomplissements</h2>
+            <div class="accomplishments-grid">
+                <div class="accomplishment-card">
+                    <div class="accomplishment-icon">🌃</div>
+                    <h3>Protecteur de Gotham City</h3>
+                    <p>A transformé Gotham d'une ville gangrenée par le crime en une cité plus sûre et prospère.</p>
+                </div>
+                <div class="accomplishment-card">
+                    <div class="accomplishment-icon">👥</div>
+                    <h3>Fondateur de la Bat-Famille</h3>
+                    <p>A formé et guidé de nombreux héros : Robin, Batgirl, Nightwing, et bien d'autres.</p>
+                </div>
+                <div class="accomplishment-card">
+                    <div class="accomplishment-icon">🦹</div>
+                    <h3>Membre de la Justice League</h3>
+                    <p>Travaille aux côtés des plus grands super-héros du monde pour sauver l'humanité.</p>
+                </div>
+                <div class="accomplishment-card">
+                    <div class="accomplishment-icon">🏢</div>
+                    <h3>Philanthrope Milliardaire</h3>
+                    <p>Utilise sa richesse pour aider les pauvres et reconstruire les quartiers détériorés de Gotham.</p>
+                </div>
+                <div class="accomplishment-card">
+                    <div class="accomplishment-icon">🧠</div>
+                    <h3>Génie Stratégique</h3>
+                    <p>Défait les plus grands criminels du monde grâce à son intelligence et sa planification.</p>
+                </div>
+                <div class="accomplishment-card">
+                    <div class="accomplishment-icon">⚔️</div>
+                    <h3>Maître des Arts Martiaux</h3>
+                    <p>Formé dans douzaines de disciplines martiales, créant un style de combat unique et dévastateur.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Films -->
+    <section id="films" class="films">
+        <div class="container">
+            <h2 class="section-title">🎬 Meilleurs Films de Batman</h2>
+            <div class="films-grid">
+                <div class="film-card">
+                    <img src="https://images.unsplash.com/photo-1578562271051-45d3f26b2d5e?w=300&h=450&fit=crop" alt="The Dark Knight">
+                    <h3>The Dark Knight (2008)</h3>
+                    <p><strong>Réalisateur :</strong> Christopher Nolan</p>
+                    <p><strong>Acteur :</strong> Christian Bale</p>
+                    <p>Considéré comme le meilleur film de super-héros jamais réalisé. Batman affronte le Joker dans une bataille épique pour l'âme de Gotham.</p>
+                </div>
+                <div class="film-card">
+                    <img src="https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?w=300&h=450&fit=crop" alt="Batman Begins">
+                    <h3>Batman Begins (2005)</h3>
+                    <p><strong>Réalisateur :</strong> Christopher Nolan</p>
+                    <p><strong>Acteur :</strong> Christian Bale</p>
+                    <p>L'origine du Batman. Comment Bruce Wayne devient le protecteur de Gotham City.</p>
+                </div>
+                <div class="film-card">
+                    <img src="https://images.unsplash.com/photo-1578562271051-45d3f26b2d5e?w=300&h=450&fit=crop" alt="The Dark Knight Rises">
+                    <h3>The Dark Knight Rises (2012)</h3>
+                    <p><strong>Réalisateur :</strong> Christopher Nolan</p>
+                    <p><strong>Acteur :</strong> Christian Bale</p>
+                    <p>Batman doit affronter son ennemi le plus puissant : Bane. Le chapitre final de la trilogie épique.</p>
+                </div>
+                <div class="film-card">
+                    <img src="https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?w=300&h=450&fit=crop" alt="The Batman">
+                    <h3>The Batman (2022)</h3>
+                    <p><strong>Réalisateur :</strong> Matt Reeves</p>
+                    <p><strong>Acteur :</strong> Robert Pattinson</p>
+                    <p>Une version plus sombre et détective du Batman. Un thriller criminel captivant.</p>
+                </div>
+                <div class="film-card">
+                    <img src="https://images.unsplash.com/photo-1578562272851-76e9e51c50db?w=300&h=450&fit=crop" alt="Batman: The Animated Series">
+                    <h3>Batman: The Animated Series (1992-1995)</h3>
+                    <p><strong>Producteur :</strong> Bruce Timm</p>
+                    <p><strong>Voix :</strong> Mark Hamill (Joker)</p>
+                    <p>La série animée légendaire qui a marqué une génération. Considérée par beaucoup comme le meilleur Batman jamais adapté.</p>
+                </div>
+                <div class="film-card">
+                    <img src="https://images.unsplash.com/photo-1577726160635-3de2c82e8357?w=300&h=450&fit=crop" alt="Batman v Superman">
+                    <h3>Batman v Superman: Dawn of Justice (2016)</h3>
+                    <p><strong>Réalisateur :</strong> Zack Snyder</p>
+                    <p><strong>Acteur :</strong> Ben Affleck</p>
+                    <p>Batman rencontre Superman dans l'épique confrontation entre deux légendes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galerie -->
+    <section id="galerie" class="galerie">
+        <div class="container">
+            <h2 class="section-title">🖼️ Galerie de Batman</h2>
+            <div class="gallery-grid">
+                <img src="https://images.unsplash.com/photo-1594909122845-11bda37a4e05?w=300&h=300&fit=crop" alt="Batman 1" class="gallery-img">
+                <img src="https://images.unsplash.com/photo-1578562271051-45d3f26b2d5e?w=300&h=300&fit=crop" alt="Batman 2" class="gallery-img">
+                <img src="https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?w=300&h=300&fit=crop" alt="Batman 3" class="gallery-img">
+                <img src="https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?w=300&h=300&fit=crop" alt="Batman 4" class="gallery-img">
+                <img src="https://images.unsplash.com/photo-1578562272851-76e9e51c50db?w=300&h=300&fit=crop" alt="Batman 5" class="gallery-img">
+                <img src="https://images.unsplash.com/photo-1577726160635-3de2c82e8357?w=300&h=300&fit=crop" alt="Batman 6" class="gallery-img">
+                <img src="https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?w=300&h=300&fit=crop" alt="Batman 7" class="gallery-img">
+                <img src="https://images.unsplash.com/photo-1594909122845-11bda37a4e05?w=300&h=300&fit=crop" alt="Batman 8" class="gallery-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Batman - Le Chevalier Noir. Tous droits réservés.</p>
+            <p>« Dans les ténèbres, je suis la lumière. Je suis Batman. »</p>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
