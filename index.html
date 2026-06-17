@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batman Awards</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">🦇 Batman Awards 🦇</h1>
+        <p class="subtitle">Les meilleurs prix pour les héros de Gotham</p>
+        
+        <div class="awards-grid">
+            <div class="award-card">
+                <div class="award-icon">🏆</div>
+                <h2>Meilleur Héros</h2>
+                <p>Batman - Le Chevalier Noir</p>
+                <button class="award-btn" onclick="celebrateAward('Batman')">Voter</button>
+            </div>
+            
+            <div class="award-card">
+                <div class="award-icon">🎯</div>
+                <h2>Meilleur Allié</h2>
+                <p>Robin - Le Jeune Prodige</p>
+                <button class="award-btn" onclick="celebrateAward('Robin')">Voter</button>
+            </div>
+            
+            <div class="award-card">
+                <div class="award-icon">🔨</div>
+                <h2>Meilleur Gadget</h2>
+                <p>Le Batarang - L'Arme Parfaite</p>
+                <button class="award-btn" onclick="celebrateAward('Batarang')">Voter</button>
+            </div>
+            
+            <div class="award-card">
+                <div class="award-icon">🚗</div>
+                <h2>Meilleur Véhicule</h2>
+                <p>La Batmobile - Rapide et Puissante</p>
+                <button class="award-btn" onclick="celebrateAward('Batmobile')">Voter</button>
+            </div>
+            
+            <div class="award-card">
+                <div class="award-icon">🏢</div>
+                <h2>Meilleur Repaire</h2>
+                <p>La Batcave - Le Quartier Général</p>
+                <button class="award-btn" onclick="celebrateAward('Batcave')">Voter</button>
+            </div>
+            
+            <div class="award-card">
+                <div class="award-icon">😈</div>
+                <h2>Meilleur Ennemi</h2>
+                <p>Le Joker - L'Adversaire Éternel</p>
+                <button class="award-btn" onclick="celebrateAward('Joker')">Voter</button>
+            </div>
+        </div>
+
+        <div class="vote-counter">
+            <p>Total des votes : <span id="totalVotes">0</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
